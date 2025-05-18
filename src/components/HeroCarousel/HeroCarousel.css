@@ -1,0 +1,67 @@
+.heroSwiper {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .hero-slide {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    bottom: 15%;
+    left: 8%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 90%;
+    color: var(--color-text-primary);
+    backdrop-filter: blur(4px);
+    box-shadow: var(--shadow-default);
+  }
+  
+  /* Responsive text for smaller screens */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+    .hero-overlay {
+      padding: 1.2rem;
+      bottom: 10%;
+      left: 5%;
+    }
+  }
+  
+  /* Swiper bullets */
+  .swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
+    font-size: 0.9rem;
+    background: var(--color-primary-light);
+    color: var(--color-text-primary);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: all 0.3s;
+    margin: 0 5px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 20px;
+    height: 20px;
+    background: var(--color-accent);
+    color: white;
+    opacity: 1;
+  }
+  
+

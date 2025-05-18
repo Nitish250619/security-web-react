@@ -1,15 +1,15 @@
-import { CssBaseline } from "@mui/material"
-import Navbar from "./components/Navbar/Navbar"
+import FooterComp from "./components/FooterComp/FooterComp";
+import Navbar from "./components/Navbar/Navbar";
+import Routing from "./components/Routing/Routing";
 
 function App() {
-  
-
   return (
     <>
-    <CssBaseline/>
-     <Navbar/>
+      <Navbar />
+      <Routing />
+      <FooterComp/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
